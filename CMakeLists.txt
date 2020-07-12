@@ -11,6 +11,6 @@ find_package(OPENSSL REQUIRED)
 
 include_directories(${OPENSSL_INCLUDE_DIR})
   
-add_executable(test_schnorr ./test/test_schnorr.cpp)
+add_executable(test_schnorr test/test_schnorr.cpp)
 
 target_link_libraries(test_schnorr ${OPENSSL_LIBRARIES})
